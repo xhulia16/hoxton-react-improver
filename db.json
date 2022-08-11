@@ -3,26 +3,26 @@
     {
       "id": 1,
       "content": "Reassinging variables",
-      "finished": false
+      "finished": true
     },
     {
       "id": 2,
       "content": "Functions",
-      "finished": false
+      "finished": true
     },
     {
       "id": 3,
       "content": "Arrays and objects",
-      "finished": false
+      "finished": true
     },
     {
       "content": "add a new todo",
-      "finished": false,
+      "finished": true,
       "id": 4
     },
     {
       "content": "example ",
-      "finished": false,
+      "finished": true,
       "id": 5
     }
   ]
