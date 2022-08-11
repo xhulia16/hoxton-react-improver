@@ -13,16 +13,16 @@
     {
       "id": 3,
       "content": "Arrays and objects",
-      "finished": true
+      "finished": false
     },
     {
       "content": "add a new todo",
-      "finished": true,
+      "finished": false,
       "id": 4
     },
     {
       "content": "example ",
-      "finished": true,
+      "finished": false,
       "id": 5
     }
   ]

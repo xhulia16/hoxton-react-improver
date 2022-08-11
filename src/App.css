@@ -41,6 +41,10 @@ li:hover {
   border-radius: 10px;
 }
 
+.finished{
+  text-decoration: line-through;
+}
+
 .App-link {
   color: #61dafb;
 }

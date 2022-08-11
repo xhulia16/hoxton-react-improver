@@ -14,8 +14,8 @@ function App() {
    function toggleTask(item: Todo){
     const todosCopy=structuredClone(todos)
                 let match=todosCopy.find(todo=>todo.id===item.id)
-              console.log(match)
               match.finished=!item.finished
+              setTodos(todosCopy)
    }
 
 
@@ -27,7 +27,7 @@ function App() {
       <main>
         <ul>
           {todos.map((item) => (
-            <li
+            <li className={item.finished ? 'finished' : 'not-finished'}
               key={item.id}
               onClick={() => {
 
