@@ -36,7 +36,7 @@ li{
   font-size: 13px;
 }
 
-li:hover {
+h3:hover {
   background-color: rgba(36, 235, 126, 0.555);
   border-radius: 10px;
 }

@@ -18,18 +18,23 @@ function App() {
               setTodos(todosCopy)
    }
 
+   function deleteTask(item: Todo){
+    let filteredTodos=todos.filter(todo=> todo.id !== item.id)
+    setTodos(filteredTodos)
+   }
+
 
   return (
     <div className="App">
       <h1>List of todos:</h1>
 
-
       <main>
         <ul>
           {todos.map((item) => (
             <li className={item.finished ? 'finished' : 'not-finished'}
-              key={item.id}
-              onClick={() => {
+              key={item.id}>
+              <h3 
+               onClick={() => {
 
                 fetch(`http://localhost:4000/todos/${item.id}`, {
                   method: "PATCH",
@@ -44,12 +49,17 @@ function App() {
                 toggleTask(item)
                 
               }
-            }
-
-
+            }>{item.content}</h3>
               
-            >
-              <h3>{item.content}</h3>
+              <button onClick={()=>{
+                fetch(`http://localhost:4000/todos/${item.id}`,{
+                  method: 'DELETE',
+                })
+                .then(resp => resp.json())
+              
+                deleteTask(item)
+              }}>
+                delete</button>
             </li>
           ))}
         </ul>
