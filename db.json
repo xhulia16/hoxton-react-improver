@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "reassinging variables",
+      "finished": false
+    },
+    {
+      "id": 2,
+      "content": "functions",
+      "finished": false
+    },
+    {
+      "id": 3,
+      "content": "arrays and objects",
+      "finished": false
+    }
+  ]
+}
