@@ -2,18 +2,28 @@
   "todos": [
     {
       "id": 1,
-      "content": "reassinging variables",
+      "content": "Reassinging variables",
       "finished": false
     },
     {
       "id": 2,
-      "content": "functions",
+      "content": "Functions",
       "finished": false
     },
     {
       "id": 3,
-      "content": "arrays and objects",
+      "content": "Arrays and objects",
       "finished": false
+    },
+    {
+      "content": "add a new todo",
+      "finished": false,
+      "id": 4
+    },
+    {
+      "content": "example ",
+      "finished": false,
+      "id": 5
     }
   ]
 }

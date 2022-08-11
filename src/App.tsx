@@ -14,17 +14,41 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      <header>
+    
       <h1>List of todos:</h1>
-      </header>
+      
      <main>
      <ul>
       {todos.map(item=>(
-        <li>
+        <li key={item.id}>
           <h3>{item.content}</h3>
         </li>
       ))}
      </ul>
+
+<form onSubmit={(event)=>{
+event.preventDefault()
+fetch('http://localhost:4000/todos',{
+  method: "Post",
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    content: event.target.todo.value,
+    finished: false
+  })
+})
+let todo={
+  content: event.target.todo.value,
+  finished: false
+}
+
+setTodos([...todos, todo])
+event.target.reset()
+}}>
+  <input type="text" name="todo" placeholder='Add a todo...'></input>
+  <button> submit </button>
+</form>
      </main>
     </div>
   )

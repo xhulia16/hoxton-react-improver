@@ -1,27 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  display: grid;
   text-align: center;
+  min-height: 100vh;
+  place-content: center;
+  align-items: center;
+  background-color: rgb(248, 144, 162);
+}
+
+main{
+  display: grid;
+  gap: 7px;
 }
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  padding: 20px;
   color: white;
+}
+
+ul {
+  display: grid;
+  gap: 1rem;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+  border-radius: 16px;
+}
+
+li{
+  font-size: 13px;
+}
+
+li:hover {
+  background-color: rgba(36, 235, 126, 0.555);
+  border-radius: 16px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+
+ul {
+  list-style: none;
 }
 
-ul{
-  list-style: none;
+input{
+  height: 28px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+button{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+
+button:hover{
+  background-color:rgba(36, 235, 126, 0.555);
 }
